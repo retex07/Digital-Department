@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('blocks/head.html')
+  <body class="body">
+    @@include('blocks/page-header.html')
+    <main class="main">
+      <div class="home">
+        <header class="main-header">
+          <h1 class="page-title home__main-header">арт - пространство</h1>
+          <div class="home__img-lenni">
+            <svg>
+              <use xlink:href="assets/icons/symbols.svg#lenni"></use>
+            </svg>
+          </div>
+          <h1 class="page-title home__main-header">для людей, горящих сердец и делом место для настоящего</h1>
+        </header>
+        <section class="offers home__offers"></section>
+        <section class="about home__about"></section>
+        <section class="upcoming home__upcoming"></section>
+        <section class="listing home__listing"></section>
+        <section class="contacts home__contacts"></section>
+        <div class="doit home__doit"></div>
+      </div>
+    </main>
+    @@include('blocks/page-footer.html')
+  </body>
+</html>
