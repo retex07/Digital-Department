@@ -1,0 +1,31 @@
+.offers {
+    .container;
+    max-width: 724px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    &__btn {
+      flex: 1;
+      white-space: nowrap;
+      &-event {
+        background: @red;
+        color: @white;
+        border: 1px solid @red;
+      }
+      &-rent {
+        background: none;
+        color: @black;
+        border: 1px solid @gray_dark;
+      }
+    }
+
+    &__title-secondary {
+        color: @black;
+        text-align: center;
+        font-family: Lora, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+  }

@@ -1,49 +1,66 @@
-.footer {
-    margin-top: auto 0 0;
-
-    &__line {
-        align-self: center;
+.page-footer {
+    box-sizing: border-box;
+    padding: 60px 0 75px;
+    &__container {
+        .container;
     }
-
+    &__border {
+        display: flex;
+        margin-bottom: 60px;
+        &::before,
+        &::after {
+            content: '';
+            flex-grow: 1;
+            height: 2px;
+            width: 2px;
+        }
+        &::before {
+            margin-right: 50px;
+            background:  linear-gradient(270deg, #1c1b1b 0%, rgba(255, 255, 255, 0.00) 82.86%);
+        }
+        &::after {
+            margin-left: 50px;
+            background:  linear-gradient(90deg, #1c1b1b 0%, rgba(255, 255, 255, 0.00) 100%);
+        }
+    }
     &__wrapper {
-        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        margin-right: 30px;
         display: flex;
         flex-direction: column;
-    
-        gap: 60px;
-        align-items: center;
-        justify-content: center;
-    
-        @media screen and (width >= 1920px) {
-            margin: 150px 293px 75px;
-        }
-        @media screen and (max-width: 1920px) {
-            margin: 150px 40px 75px;
-        }
-        @media screen and (max-width: 1340px) {
-            margin: 100px 30px 65px;
-        }
-        @media screen and (max-width: 768px) {
-            margin: 100px 0 50px;
+        gap: 22px;
+        position: relative;
+        padding-left: 26px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            background-color: @red;
         }
     }
+    &__nav-link {
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: @black;
+        transition: color 0.2s;
+        &:hover {
+            @media(hover:hover){
+                color: @red;
 
-    &__lines {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    
-        @media screen and (width >= 1920px) {
-            gap: 98px;
+            }
         }
-        @media screen and (max-width: 1920px) {
-            gap: 92px;
-        }
-        @media screen and (max-width: 1340px) {
-            gap: 52px;
-        }
-        @media screen and (max-width: 768px) {
-            gap: 20px;
+        &:active {
+            color: @red;
         }
     }
 }
