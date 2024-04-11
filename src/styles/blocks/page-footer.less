@@ -1,8 +1,31 @@
 .page-footer {
     box-sizing: border-box;
     padding: 60px 0 75px;
+    &__pp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-actions {
+            display: inline-flex;
+            gap: 60px;
+        }
+    }
+    &__about {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        p {
+            margin: 0;
+        }
+    }
     &__container {
         .container;
+
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
     }
     &__border {
         display: flex;
@@ -62,5 +85,16 @@
         &:active {
             color: @red;
         }
+    }
+
+    &__description {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__contacts {
+        display: inline-flex;
+        align-items: center;
     }
 }

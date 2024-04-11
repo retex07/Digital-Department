@@ -51,7 +51,6 @@
 
 .page-header__buttonuser {
     border: 1px solid ;
-    color: ;
     background-color: transparent;
     text-decoration: none;
     font-weight: 600;
@@ -112,10 +111,6 @@
     object-fit: contain;
 }
 
-.main-header{
-    padding: 100px 0;
-}
-
 .events{
     padding-top: 147px;
 }
@@ -152,7 +147,7 @@
 
 .listing_card-event{
     max-width: 405px;
-    width: calc(33.333%-40px);
+    width: calc(33.333% - 40px);
 }
 
 .card-event{

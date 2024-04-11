@@ -4,7 +4,7 @@
         <!-- prettier-ignore -->
         @@loop('event-card.html', [
             {
-                "class": "listing__event-card",
+                "class": "upcoming__event-card",
                 "img": "assets/images/nirvana.jpg",
                 "img_webp": "assets/images/nirvana.webp",
                 "alt": "nirvana",
@@ -14,7 +14,7 @@
                 "datetime": "2022-12-07T18:00"
             },
             {
-                "class": "listing__event-card",
+                "class": "upcoming__event-card",
                 "img": "assets/images/stuff.jpg",
                 "img_webp": "assets/images/stuff.webp",
                 "alt": "stuff",
@@ -24,7 +24,7 @@
                 "datetime": "2022-12-14T18:30"
             },
             {
-                "class": "listing__event-card",
+                "class": "upcoming__event-card",
                 "img": "assets/images/sade.jpg",
                 "img_webp": "assets/images/sade.webp",
                 "alt": "sade",
@@ -34,5 +34,19 @@
                 "datetime": "2022-12-16T20:00"
             }
         ])
+    </div>
+    <div class="upcoming__actions">
+        <svg class="link__icon" width="91" height="65">
+            <use xlink:href="assets/icons/symbols.svg#showLeft"></use>
+        </svg>
+        <svg class="link__icon" width="99" height="2">
+            <use xlink:href="assets/icons/symbols.svg#list"></use>
+        </svg>
+        <svg class="link__icon" width="91" height="65">
+            <use xlink:href="assets/icons/symbols.svg#showRight"></use>
+        </svg>
+    </div>
+    <div class="upcoming__links">
+        <a href="#" class="upcoming__link link">Смотреть все</a>
     </div>
 </section>

@@ -4,4 +4,32 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  &__actions {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+  }
+
+  &__event-card {
+    width: calc(33.3333% - 60px);
+    margin: 0 30px 70px;
+  }
+
+  &__links {
+    .container;
+    display: flex;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0;
+    height: 52px;
+    margin-right: 40px;
+  }
 }
