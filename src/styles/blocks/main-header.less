@@ -10,6 +10,16 @@
         font-size: 45px;
         line-height: normal;
         color: @black;
+
+        @media @bw1340 {
+            font-size: 35px;
+        }
+        @media @bw768 {
+            font-size: 30px;
+        }
+        @media @bw370 {
+            font-size: 13px;
+        }
     }
     &__text {
         padding-left: 40px;
@@ -24,6 +34,17 @@
         margin: 70px auto;
         max-width: 948px;
         width: 100%;
+
+        @media @bw1340 {
+            font-size: 35px;
+        }
+        @media @bw768 {
+            font-size: 30px;
+            padding: 0;
+        }
+        @media @bw370 {
+            font-size: 13px;
+        }
     }
 
     &__picture{
