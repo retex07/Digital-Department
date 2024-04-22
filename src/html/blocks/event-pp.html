@@ -9,7 +9,7 @@
         </div>
         <div class="pp__wrapper">
             <h3 class="pp__title">Заполните форму <br/>и мы подберем площадку </h3>
-            <div class="pp__form form">
+            <form class="pp__form form" id="js-eventForm">
                 <div class="form__list form__field--mb30">
                     <div class="form__field form__field--w50 field">
                         <h6 class="field__title">
@@ -17,7 +17,7 @@
                         </h6>
                         <div class="field__radio radio">
                             <label class="radio__lable">
-                                <input type="radio" name="format" value="seminar"class="radio__input"/>
+                                <input type="radio" name="format" value="seminar" class="radio__input"/>
                                 <span class="radio__mark"></span>
                                 <span class="radio__name">Мастер-класс/семинар</span>
                             </label>
@@ -87,7 +87,7 @@
                     <div class="form__list form__field--mb30">
                         <label class="form__field form__field--w50 field">
                             <span class="field__label">Имя*</span>
-                            <input type="text" class="field__input" placeholder="Имя" name="name" required/>
+                            <input type="text" class="field__input" placeholder="Имя" name="name" required />
                         </label>
                         <label class="form__field form__field--w50 field">
                             <span class="field__label">Фамилия*</span>
@@ -115,16 +115,16 @@
                     </label>
                         
                     <label class="form__check form__check--mb40 check">
-                        <input type="checkbox" class="check__input" name="agree" required/>
-                        <span class="check__mark"></span>
                         <span class="check__label">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных </span>
+                        <input type="checkbox" class="check__input" name="agree" required />
+                        <span class="check__mark"></span>
                     </label>
                     <div class="form__btns">
                         <button type="submit" class="form__btn form__send-btn btn">Отправить</button>
                         <button class="button form__close-btn js-ppCloseBtn">Закрыть</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>

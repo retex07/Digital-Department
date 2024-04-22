@@ -9,18 +9,25 @@
                 <a class="page-footer__nav-link">Наши проекты</a>
                 <a class="page-footer__nav-link">Контакты</a>
             </nav>
-            <form class="page-footer__form subscribe">
+            <form
+                    class="page-footer__form subscribe"
+                    action="https://jsonplaceholder.typicode.com/posts"
+                    method="post"
+                    id="js-subscribeForm"
+            >
                 <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
                 <div class="subscribe__wrapper">
-                    <input type="email" name="email" placeholder="Email" class="subscribe__input" required/>
+                    <div class="subscribe__input-block">
+                        <input id="js-subscribeEmail" type="email" name="email" placeholder="Email" class="subscribe__input" required/>
+                    </div>
                     <button type="submit" class="subscribe__submit">Подписаться</button>
                 </div>
                 <label class="subscribe__check check">
-                    <input type="checkbox" class="check__input" name="agree" required />
-                    <span class="check__mark"></span>
                     <span class="check__label">
                         Согласен на обработку персональных данных
                     </span>
+                    <input type="checkbox" class="check__input" name="agree" required />
+                    <span class="check__mark"></span>
                 </label>
             </form>
         </div>
