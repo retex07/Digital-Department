@@ -1,4 +1,8 @@
 .upcoming {
+  &__container {
+    .container;
+  }
+
   &__events-list {
     .container;
     display: flex;
@@ -31,5 +35,8 @@
     padding: 0;
     height: 52px;
     margin-right: 40px;
+    @media @bw370 {
+      margin-top: 18px;
+    }
   }
 }

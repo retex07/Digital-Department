@@ -1,9 +1,9 @@
 .about {
-    padding-bottom: 90px;
-    &__block {
+  padding-bottom: 90px;
+  &__block {
     display: flex;
     flex-direction: column;
-  }  
+  }
   &__container {
     .container;
   }
@@ -12,18 +12,31 @@
     font-size: 44px;
     font-weight: 700;
     color: @black;
+
+    @media @bw768 {
+      font-size: 26px;
+    }
+    @media @bw370 {
+      font-size: 18px;
+      margin: 0 0 30px;
+    }
+
     &--w868 {
         max-width: 868px;
         width: 100%;
     }
-    // &--mt {
-    //     margin-top: -120px;
-    // }
-    &--2{
+    &--2 {
         grid-area: title;
+        @media @bw768 {
+          font-size: 26px;
+          margin: 28px 0 0;
+        }
+        @media @bw370 {
+          font-size: 28px;
+        }
     }
   }
-  &__text{
+  &__text {
     align-self: flex-end;
     margin: 0 0 100px;
     max-width: 870px;
@@ -31,12 +44,38 @@
     font-weight: 400;
     font-size: 18px;
     color: @black;
+
+    @media @bw768 {
+      margin: 0 0 80px;
+      font-size: 16px;
+    }
+    @media @bw370 {
+      margin: 0 0 60px;
+    }
+
     &--2 {
         grid-area: text;
-        margin-left: auto
+        margin-left: auto;
+        @media @bw768 {
+          font-size: 16px;
+          max-width: 348px;
+          padding-left: 71px;
+        }
+        @media @bw370 {
+          padding-left: 0;
+        }
     }
     &--3 {
         margin-bottom: 90px;
+        @media @bw768 {
+          max-width: 280px;
+          margin: 0;
+        }
+        @media @bw370 {
+          margin-bottom: 0;
+          max-width: none;
+          width: 100%;
+        }
     }
   }
   &__picture {
@@ -49,6 +88,12 @@
         display: block;
         width: 100%;
         padding-top: 66.322%;
+    }
+    @media @bw768 {
+      width: 100%;
+    }
+    @media @bw370 {
+      margin: 0 0 60px;
     }
   }
   &__img {
@@ -66,14 +111,30 @@
     display: grid;
     grid-template-areas: "picture1 picture1 picture2"
     "title title picture2"
-    "text text text"; 
+    "text text text";
+
+    @media @bw1340 {
+      gap: 39px;
+    }
+    @media @bw768 {
+      gap: 27px;
+      grid-template-columns: 1fr 1fr 262px;
+      grid-template-areas: "picture1 picture1 picture1"
+      "title title picture2"
+      "text text picture2";
+    }
+    @media @bw370 {
+      grid-template-columns: 1fr;
+      grid-template-areas: "picture1"
+      "title"
+      "text"
+      "picture2";
+      gap: 0;
+    }
   }
   &__picture2 {
     grid-area: picture2;
-   // margin-top: -280px;
     align-self: flex-end;
-   // max-width: 404px;
-    //width: 30.284%;
     position: relative;
     display: block;
     &::before {
@@ -82,12 +143,28 @@
         width: 100%;
         padding-top: 122.029%;
     }
+
+    @media @bw768 {
+      align-self: flex-start;
+    }
+    @media @bw370 {
+      max-width: 193px;
+    }
   }
-  &__block3{
+  &__block3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 60px;
+    @media @bw768 {
+      flex-direction: column;
+      margin-top: 25px;
+      gap: 80px;
+    }
+    @media @bw370 {
+      margin-top: 50px;
+      gap: 60px;
+    }
   }
   &__picture3 {
     display: block;
@@ -96,7 +173,7 @@
     position: relative;
     box-sizing: border-box;
     padding: 18px 9px 0 49px;
-    &::before{
+    &::before {
         content: '';
         position: absolute;
         top: 0;
@@ -113,7 +190,7 @@
 
     }
   }
-  &__img2{
+  &__img2 {
     position: absolute;
     top: 18px;
     left: 49px;
@@ -122,9 +199,34 @@
     width: calc(100% - 58px);
     object-fit: contain;
   }
-  &__block3-wrapper{
+
+  &__block3-wrapper {
     max-width: 344px;
     width: 100%;
+    @media @bw768 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: none;
+    }
+    @media @bw370 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      max-width: none;
+    }
+  }
 
+  &__link {
+    @media @bw768 {
+      display: inline-flex;
+      max-width: 262px;
+      width: 100%;
+      justify-content: space-between;
+    }
+    @media @bw370 {
+      max-width: none;
+    }
   }
 }

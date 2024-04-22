@@ -7,10 +7,26 @@
 
     &__offers {
       margin-bottom: 200px;
-      
-      &-actions {
-          display: flex;
-          gap: 106px;
+      @media @bw768 {
+        margin-bottom: 130px;
+      }
+      @media @bw370 {
+        margin-bottom: 100px;
+      }
+    }
+
+    &__offers-actions {
+      display: flex;
+      gap: 106px;
+      @media @bw1340 {
+        gap: 94px;
+      }
+      @media @bw768 {
+        gap: 56px;
+      }
+      @media @bw370 {
+        flex-direction: column;
+        gap: 25px;
       }
     }
 
@@ -18,5 +34,17 @@
       background-color: @white;
       padding: 120px 0 84px;
       margin-bottom: 64px;
+      @media @bw1340 {
+        padding: 100px 0 77px;
+        margin-bottom: 71px;
+      }
+      @media @bw768 {
+        padding: 80px 0 43px;
+        margin-bottom: 35px;
+      }
+      @media @bw370 {
+        padding: 40px 0 39px;
+        margin-bottom: 41px;
+      }
     }
 }
