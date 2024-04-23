@@ -10,11 +10,15 @@
     overflow-y: auto;
     z-index: 110;
     background-color: @gray;
-    //display: none;
     @supports(backdrop-filter: blur(25px)) {
         background-color: @black_40;
         backdrop-filter: blur(25px);
     }
+
+    @media @bw370 {
+        padding: 80px 20px 50px;
+    }
+
     &__container {
         box-sizing: border-box;
         display: flex;
@@ -28,6 +32,9 @@
         background-repeat: repeat;
         background-position: 0 0;
         background-size: auto;
+        @media @bw370 {
+            padding: 70px 20px 40px;
+        }
     }
     &__title {
         margin: -110px 0 70px;
@@ -41,6 +48,12 @@
         line-height: 30px;
         letter-spacing: 0.44px;
         color: @white;
+        @media @bw370 {
+            font-size: 14px;
+            font-weight: 300;
+            padding: 9px 20px;
+            max-width: 225px;
+        }
     }
     &__sticky-close {
         position: sticky;
@@ -65,6 +78,13 @@
         background-color: @black;
         color: @white;
         transition: background-color 0.2s;
+        @media @bw370 {
+            width: 36px;
+            height: 36px;
+            right: auto;
+            top: -90px;
+        }
+
         &:hover {
             @media(hover:hover) {
                 background-color: @red_dark;
@@ -72,7 +92,6 @@
         }
     }
     &__form {
-        margin: auto;
         max-width: 870px;
     }
 

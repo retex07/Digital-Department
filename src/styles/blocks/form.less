@@ -1,22 +1,37 @@
 .form {
-    &__list{
+    &__list {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         row-gap: 30px;
         column-gap: 60px;
+        justify-content: space-between;
+        @media @bw768 {
+            column-gap: 30px;
+        }
+        @media @bw370 {
+            justify-content: center;
+            flex-direction: column;
+        }
+
         &--mb50 {
             margin-bottom: 50px;
         }
     }
     &__group {
         width: calc(50% - 30px);
+        @media @bw370 {
+            width: 100%;
+        }
     }
-    &__field{
+    &__field {
         display: block;
         width: 100%;
-        &--w50{
+        &--w50 {
             width: calc(50% - 30px);
+            @media @bw370 {
+                width: auto;
+            }
         }
         &--mb30 {
             margin-bottom: 30px;
@@ -33,17 +48,29 @@
     }
 
     &__btns {
-        display: inline-flex;
+        display: flex;
+        flex-direction: row;
         gap: 200px;
+        @media @bw370 {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
     &__send-btn {
         padding: 15px 156px;
+        @media @bw370 {
+            padding: 15px 80px;
+        }
     }
 
     &__close-btn {
         border: none;
         background: none;
         text-decoration: underline;
+    }
+
+    &__check-label {
+        font-size: 14px !important;
     }
 }

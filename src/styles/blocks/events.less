@@ -1,5 +1,12 @@
 .events {
-    padding: 140px 0 100px;
+    padding: 138px 0 100px;
+    @media @bw768 {
+        padding: 91px 0 40px;
+    }
+    @media @bw370 {
+        padding: 80px 0 40px;
+    }
+
     &__listing {
         margin-bottom: 100px;
     }
@@ -14,10 +21,19 @@
         margin: 0 0 60px;
         font-size: 16px;
         line-height: 22px;
+        @media @bw768 {
+            margin: 0 0 50px;
+        }
+        @media @bw370 {
+            margin: 0 0 30px;
+        }
     }
 
     &__offers {
         margin-bottom: 100px;
+        @media @bw370 {
+            margin-bottom: 90px;
+        }
     }
 
     &__drop-down {
@@ -29,5 +45,12 @@
         cursor: pointer;
         max-width: 128px;
         margin: 70px auto 100px;
+
+        @media @bw768 {
+            margin: 60px auto 100px;
+        }
+        @media @bw370 {
+            margin: 50px auto 100px;
+        }
     }
 }

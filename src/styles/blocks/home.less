@@ -3,6 +3,15 @@
                 
     &__listing {
       margin-bottom: 95px;
+      @media @bw1340 {
+        margin-bottom: 90px;
+      }
+      @media @bw768 {
+        margin-bottom: 58px;
+      }
+      @media @bw370 {
+        margin-bottom: 60px;
+      }
     }
 
     &__offers {
@@ -32,6 +41,14 @@
 
     &__upcoming {
       background-color: @white;
+      clip-path: polygon(
+              0 0,    /* левый верхний угол */
+              30% 2%,/* вершина верхнего выреза */
+              100% 0, /* правый верхний угол */
+              100% 100%, /* правый нижний угол */
+              70% 98%, /* вершина нижнего выреза */
+              0 100%   /* левый нижний угол */
+      );
       padding: 120px 0 84px;
       margin-bottom: 64px;
       @media @bw1340 {

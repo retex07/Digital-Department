@@ -1,26 +1,62 @@
 .page-footer {
     box-sizing: border-box;
     padding: 60px 0 75px;
+
     &__pp {
         display: flex;
         flex-direction: column;
         gap: 20px;
-
-        &-actions {
-            display: inline-flex;
-            gap: 60px;
+        @media @bw370 {
+            flex-direction: column-reverse;
+            width: 100%;
         }
     }
+
+    &__pp-copyright {
+        @media @bw370 {
+            text-align: end;
+        }
+    }
+
+    &__text {
+        @media @bw768 {
+            font-size: 14px;
+        }
+    }
+
+    &__pp-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 60px;
+        @media @bw768 {
+            gap: 15px;
+        }
+        @media @bw370 {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &__pp-actions_title {
+        white-space: nowrap;
+    }
+
     &__down-block {
         flex: 1;
     }
     &__about {
-        display: inline-flex;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
         p {
             margin: 0;
+        }
+
+        @media @bw370 {
+            flex-direction: column;
         }
     }
     &__container {
@@ -32,7 +68,6 @@
     }
     &__border {
         display: flex;
-        margin-bottom: 60px;
         &::before,
         &::after {
             content: '';
@@ -48,11 +83,32 @@
             margin-left: 50px;
             background:  linear-gradient(90deg, #1c1b1b 0%, rgba(255, 255, 255, 0.00) 100%);
         }
+        @media @bw768 {
+            &::before {
+                margin-right: 25px;
+            }
+            &::after {
+                margin-left: 25px;
+            }
+        }
+        @media @bw370 {
+            &::before {
+                margin-right: 10px;
+            }
+            &::after {
+                margin-left: 10px;
+            }
+        }
     }
+
     &__wrapper {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        @media @bw370 {
+            flex-direction: column;
+            gap: 59px;
+        }
     }
     &__nav {
         margin-right: 30px;
@@ -61,6 +117,11 @@
         gap: 22px;
         position: relative;
         padding-left: 26px;
+
+        @media @bw370 {
+            gap: 27px;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -79,6 +140,11 @@
         font-weight: 600;
         color: @black;
         transition: color 0.2s;
+
+        @media @bw370 {
+            font-size: 14px;
+        }
+
         &:hover {
             @media(hover:hover){
                 color: @red;

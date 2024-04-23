@@ -3,11 +3,11 @@
         <div class="page-footer__border"></div>
         <div class="page-footer__wrapper">
             <nav class="page-footer__nav">
-                <a class="page-footer__nav-link">Календарь мероприятий</a>
-                <a class="page-footer__nav-link">Провести мероприятие</a>
-                <a class="page-footer__nav-link">Стать арендатором</a>
-                <a class="page-footer__nav-link">Наши проекты</a>
-                <a class="page-footer__nav-link">Контакты</a>
+                <a class="page-footer__nav-link" href="events.html">Календарь мероприятий</a>
+                <a class="page-footer__nav-link" href="index.html">Провести мероприятие</a>
+                <a class="page-footer__nav-link" href="index.html">Стать арендатором</a>
+                <a class="page-footer__nav-link" href="index.html#about">Наши проекты</a>
+                <a class="page-footer__nav-link" href="index.html#contacts">Контакты</a>
             </nav>
             <form
                     class="page-footer__form subscribe"
@@ -18,7 +18,7 @@
                 <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
                 <div class="subscribe__wrapper">
                     <div class="subscribe__input-block">
-                        <input id="js-subscribeEmail" type="email" name="email" placeholder="Email" class="subscribe__input" required/>
+                        <input id="js-subscribeEmail" type="email" name="email" placeholder="Email" class="subscribe__input" required />
                     </div>
                     <button type="submit" class="subscribe__submit">Подписаться</button>
                 </div>
@@ -31,15 +31,25 @@
                 </label>
             </form>
         </div>
+
+        <div class="page-footer__contacts hidden1340more">
+            <svg class="link__icon" width="58" height="58">
+                <use xlink:href="assets/icons/symbols.svg#insta"></use>
+            </svg>
+            <svg class="link__icon" width="58" height="58">
+                <use xlink:href="assets/icons/symbols.svg#vk"></use>
+            </svg>
+        </div>
+
         <div class="page-footer__about">
             <div class="page-footer__pp page-footer__down-block">
-                <p>© Millennials 2022</p>
+                <p class="page-footer__pp-copyright page-footer__text">© Millennials 2022</p>
                 <div class="page-footer__pp-actions">
-                    <h4>Политика конфиденциальности</h4>
-                    <h4>Cookies</h4>
+                    <h4 class="page-footer__pp-actions_title page-footer__text">Политика конфиденциальности</h4>
+                    <h4 class="page-footer__pp-actions_title page-footer__text">Cookies</h4>
                 </div>
             </div>
-            <div class="page-footer__contacts page-footer__down-block">
+            <div class="page-footer__contacts page-footer__down-block hidden768">
                 <svg class="link__icon" width="58" height="58">
                     <use xlink:href="assets/icons/symbols.svg#insta"></use>
                 </svg>
@@ -48,7 +58,7 @@
                 </svg>
             </div>
             <div class="page-footer__description page-footer__down-block">
-                <p>Создание и продвижение</p>
+                <p class="page-footer__text">Создание и продвижение</p>
                 <svg class="link__icon" width="56" height="17">
                     <use xlink:href="assets/icons/symbols.svg#tagree"></use>
                 </svg>
