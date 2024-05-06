@@ -26,14 +26,15 @@
         width: 100%;
     }
     &--2 {
-        grid-area: title;
-        @media @bw768 {
-          font-size: 26px;
-          margin: 28px 0 0;
-        }
-        @media @bw600 {
-          font-size: 28px;
-        }
+      grid-area: title;
+      margin: 0;
+      @media @bw768 {
+        font-size: 26px;
+        margin: 28px 0 0;
+      }
+      @media @bw600 {
+        font-size: 28px;
+      }
     }
   }
   &__text {
@@ -82,7 +83,7 @@
     grid-area: picture1;
     position: relative;
     display: block;
-    width: 65.217%;
+    width: 100%;
     &::before {
         content: '';
         display: block;

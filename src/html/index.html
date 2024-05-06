@@ -21,13 +21,15 @@
                 @@include('blocks/upcoming.html', {class: 'home__upcoming'})
                 @@include('blocks/blog-listing.html', {class: 'home__listing'})
                 @@include('blocks/contacts.html', {class: 'home__contacts'})
-                
+
                 <div class="doit home__doit"></div>
             </div>
         </main>
-        <picture class="main-header__picture">
-            <img src="assets/images/quote.svg" class="main-header__img" alt="quote">
-        </picture>
+        <div class="main-text">
+            <p class="main-text__p">Просто делайте,</p>
+            <p class="main-text__p end">что нравится,</p>
+            <p class="main-text__p end">а мы вам поможем</p>
+        </div>
         @@include('blocks/page-footer.html')
         @@include('blocks/event-pp.html')
 

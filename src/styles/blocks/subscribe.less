@@ -1,11 +1,14 @@
 .subscribe {
     max-width: 410px;
     &__title {
-        margin: 0 0 24px;
+        margin: 0 0 14px;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.3;
-        @media @bw370 {
+        @media @bw768 {
+            margin: 0 0 24px;
+        }
+        @media @bw400 {
             font-weight: 500;
             margin: 0 0 14px;
             font-size: 13px;

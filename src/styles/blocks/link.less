@@ -15,6 +15,12 @@
         color: @red;
     }
     &__icon {
+        display: inline-block;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
         margin-left: 20px;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
